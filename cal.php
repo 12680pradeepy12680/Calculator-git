@@ -13,6 +13,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       $result = $n1 - $n2;
       echo "Result: $result";
       break;
+	  case 'div':
+      if ($n2 == 0) {
+        echo "Error: Division by zero!";
+      } else {
+        $result = $n1 / $n2;
+        echo "Result: $result";
+      }
+      break;
     default:
       echo "Operation not supported yet.";
   }
