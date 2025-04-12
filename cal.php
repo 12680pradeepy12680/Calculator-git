@@ -21,6 +21,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo "Result: $result";
       }
       break;
+	  case 'mul':
+      $result = $n1 * $n2;
+      echo "Result: $result";
+      break;
     default:
       echo "Operation not supported yet.";
   }
